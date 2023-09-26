@@ -121,6 +121,10 @@ ul {
     min-width: 125px;
     text-align: center;
     text-transform: capitalize;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    cursor: pointer;
     transition: 0.3s;
 }
 
@@ -170,6 +174,36 @@ ul {
 .section {
     position: relative;
     padding: var(--section-padding) 0;
+}
+
+.form-input {
+    display: inline-block;
+    padding: .9rem 1.5rem;
+    background: var(--bg-color-3);
+    border: 2px solid var(--bg-color-3);
+    width: 100%;
+    border-radius: 17px;
+    font-family: inherit;
+    font-size: .85rem;
+    font-weight: 500;
+    color: var(--heading-color);
+    outline: none;
+    transition: .3s;
+}
+
+.form-input::placeholder {
+    color: var(--text-color);
+}
+
+.form-input:hover {
+    filter: brightness(97%);
+}
+
+.form-input:valid,
+.form-input:focus {
+    filter: brightness(100%);
+    background: var(--bg-color-1);
+    border-color: var(--main-color-1);
 }
 
 .triangle {
@@ -333,7 +367,7 @@ header.scrolled .logo {
     border-radius: 0 0 80px 80px;
 }
 
-.showcase-image .person {
+.showcase-image .itzak {
     position: absolute;
     width: 95%;
     bottom: 0;
@@ -873,11 +907,11 @@ header.scrolled .logo {
 
 /* ************* Companies Section Styling ************* */
 
-.testimonials {
+.companies {
     padding: var(--section-padding) 0 calc(var(--section-padding) + 120px);
 }
 
-.testimonials .container {
+.companies .container {
     display: grid;
     grid-template-columns: 1.2fr 1fr;
     align-items: center;
@@ -894,32 +928,32 @@ header.scrolled .logo {
     padding: 0 2.5rem;
 }
 
-.client {
+.comp {
     display: grid;
     grid-template-columns: 85px 1fr;
     align-items: center;
     gap: 1.5rem;
 }
 
-.client img {
+.comp img {
     width: 100%;
     border-radius: 50%;
 }
 
-.client-info h4 {
+.comp-info h4 {
     font-weight: 500;
     color: var(--heading-color);
     margin-bottom: .3rem;
     font-size: 1.05rem;
 }
 
-.client-info h5 {
+.comp-info h5 {
     color: var(--text-color);
     font-weight: 500;
     font-size: .8rem;
 }
 
-.client-info h5 a {
+.comp-info h5 a {
     color: var(--main-color-1);
 }
 
@@ -951,11 +985,11 @@ header.scrolled .logo {
     height: 11px;
 }
 
-.testimonials-title {
+.companies-title {
     padding-left: 5rem;
 }
 
-.testimonials-title > * {
+.companies-title > * {
     color: #fff;
 }
 
@@ -976,7 +1010,7 @@ header.scrolled .logo {
     z-index: -1;
 }
 
-.section-backgroung .person {
+.section-backgroung .itzak {
     position: absolute;
     height: 450px;
     bottom: 0;
@@ -995,5 +1029,75 @@ header.scrolled .logo {
     position: absolute;
     left: 77%;
     top: 15%;
+    transform: translate(-50%, -50%);
+}
+
+/* ************* Contact Section Styling ************* */
+
+.contact .container  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+}
+
+.mail {
+    color: var(--main-color-1);
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: .3s;
+}
+
+.mail i {
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-left: 2px;
+    transform: translateY(3px);
+    transition: .3s margin-left;
+}
+
+.mail:hover {
+    color: var(--main-color-dark-1);
+}
+
+.mail:hover i {
+    margin-left: 10px;
+}
+
+.contact-form {
+    background-color: var(--bg-color-2);
+    border-radius: 20px;
+    padding: 3.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form h3 {
+    color: var(--heading-color);
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1.6rem;
+    line-height: 0.9;
+}
+
+textarea.form-input {
+    resize: none;
+    min-height: 170px;
+}
+
+.contact-form .form-input {
+    margin-bottom: 1.5rem;
+}
+
+.contact .square {
+    position: absolute;
+    left: 17%;
+    bottom: 15%;
+    transform: translate(-50%, -50%);
+}
+
+.contact .triangle {
+    position: absolute;
+    left: 90%;
+    top: 98%;
     transform: translate(-50%, -50%);
 }
