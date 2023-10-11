@@ -1343,8 +1343,6 @@ footer .social-media {
 
 /* ************* 768px Screens ************* */
 
-/* continuação 2:47:20 */
-
 @media (max-width: 768px) {
     :root {
         --section-padding: 4.5rem;
@@ -1661,5 +1659,99 @@ footer .social-media {
     .contact .triangle {
         left: 20%;
         top: 101%;
+    }
+}
+
+/* ************* 500px Screens ************* */
+
+@media (max-width: 500px) {
+    .container {
+        padding: 0 1rem; 
+    }
+
+    .showcase-area .square {
+        display: none;
+    }
+
+    .showcase-area .container {
+        row-gap: 4.5rem;
+    }
+
+    .showcase-area .heading {
+        font-size: 2.4rem;
+    }
+
+    .skills-box {
+        padding: 3rem 2.5rem;
+    }
+
+    .skills-wrap {
+        grid-template-columns: 1fr;
+        row-gap: 1.5rem;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+    }
+
+    .srv-card {
+        transform: none !important;
+        min-height: auto;
+    }
+
+    .portfolio-header {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .portfolio-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-btn {
+        margin-top: 1rem;
+    }
+
+    .portfolio .slider-wrap {
+        width: calc(100% - 2rem);
+        grid-template-columns: 50px 1fr 50px;
+    }
+
+    .images {
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .prev-btn {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        z-index: 1;
+        color: #333;
+    }
+
+    .next-btn {
+        grid-column: 3/4;
+        grid-row: 1/2;
+        z-index: 1;
+        color: #333;
+    }
+
+    .contact-form p {
+        font-size: 1.2rem;
+    }
+
+    footer {
+        padding: var(--section-padding) 0 1rem;
+    }
+
+    footer .text {
+        order: 3;
+        flex-basis: 100%;
+        text-align: center;
+        margin-top: 1rem;
     }
 }
