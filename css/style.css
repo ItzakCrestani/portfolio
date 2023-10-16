@@ -492,6 +492,7 @@ body.open .hamburger .bar:last-child {
 
 .showcase-area .square {
     position: absolute;
+    top: 125%;
     left: 25%;
     bottom: 120px;
     transform: translate(-50%, -50%);
