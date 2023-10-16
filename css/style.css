@@ -1302,6 +1302,10 @@ footer .social-media {
         font-size: 2.7rem;
     }
 
+    .showcase-area .circle {
+        top: 95%;
+    }
+
     .text {
         font-size: 0.84rem;
         margin: 1.3rem 0;
@@ -1525,6 +1529,7 @@ footer .social-media {
 
     .showcase-area .circle {
         width: 120px;
+        top: 80%;
     }
 
     .showcase-area .square {
